@@ -14,6 +14,9 @@ export default defineNuxtConfig({
         { name: 'description', content:'Faturometro FE23'},
         { name: 'robots', content:'all'},
       ],
+      link:[
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      ]
     }
   }
 })
