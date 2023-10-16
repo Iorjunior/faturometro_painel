@@ -5,7 +5,10 @@
         </div>
         <div class='flex flex-1 flex-col justify-center items-center gap-4'>
             <div class='text-8xl font-bold text-white'>
-                FATUROMETRO
+                FATURÔMETRO
+            </div>
+            <div class='text-5xl font-bold text-white'>
+                DO CAMPO À MESA
             </div>
             <div class='text-9xl font-bold text-white font-mono flex gap-2'>
                 R$ {{ valor.toLocaleString('pt-BR', {style: 'decimal', maximumFractionDigits: 2, minimumFractionDigits: 2}) }}
@@ -22,14 +25,14 @@
 export default {
     data() {
         return {
-            valor: 0.01,
+            valor: 0.00,
         }
     },
     mounted(){
         this.getFaturamento()
         setInterval(() => {
             this.getFaturamento()
-        }, 10000)
+        }, 20000)
     },
     methods:{
         getFaturamento(){
