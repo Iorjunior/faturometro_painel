@@ -38,7 +38,7 @@ export default {
         this.getFaturamento(spaceId)
         setInterval(() => {
             this.getFaturamento(spaceId)
-        }, 20000)
+        }, 60000)
     },
     methods:{
         getFaturamento(id){
